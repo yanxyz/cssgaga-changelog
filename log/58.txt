@@ -1,0 +1,12 @@
+114
+
+1. 去除border压缩（感谢kaiye反馈）
+
+2. 去除界面上的置顶选项，如有需要可改配置（1为置顶）
+<add key="chkTopMost" value="1" />
+
+2. 可配置生成文件为UTF8去BOM（1为无BOM）
+<add key="chkNoBom" value="1" />
+
+3. 可配置Sprite转换绝对地址（1为转换sprite为绝对地址）
+<add key="chkAbsolutePath" value="1" />

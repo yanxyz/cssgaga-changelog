@@ -1,0 +1,8 @@
+176
+
+AutoSprite 支持生成 png32
+
+命名以 "-32.png" 结尾的 slice 们将拼为一张 png32 的 sprite，例如
+
+.icon1{width:16px;height:16px;background-image:url(slice/icon1-32.png)}
+.icon2{width:16px;height:16px;background-image:url(slice/icon2-32.png)}

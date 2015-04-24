@@ -1,0 +1,6 @@
+184
+
+Prefix 和 Suffix 支持时间变量 %datetime%，例如
+<add key="cssSuffix" value="#cssgaga-%filename%-end{z-index:%datetime%}" />
+
+此例的应用场景：开发科通过获取此处的 z-index 值来做 css 文件的版本对比

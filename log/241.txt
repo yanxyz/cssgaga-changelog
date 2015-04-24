@@ -1,0 +1,16 @@
+264
+
+调整 RGBAtoFilter 格式，感谢任平生的建议
+
+
+源文件：.classname{background-color:rgba(0,0,0,.5);}
+
+Gaga 生成后会添加一段：
+
+.classname {
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+	#zoom:1;
+}
+:root .classname{
+	-ms-filter: 'none';
+}

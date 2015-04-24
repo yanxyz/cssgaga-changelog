@@ -1,0 +1,6 @@
+166
+
+CSS可附加自定义代码，%filename%为当前CSS的文件名（不含后缀）
+
+<add key="cssPrefix" value="#cssgaga-%filename%-start{display:none}" />
+<add key="cssSuffix" value="#cssgaga-%filename%-end{display:none}" />

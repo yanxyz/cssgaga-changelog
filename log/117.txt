@@ -1,0 +1,11 @@
+162
+
+预告：
+
+新一代的 AutoSprite
+拼图紧密程度已达到惊人的水平
+即便运行复杂的算法，性能表现同样出色
+将于近期发布
+
+请务必提前安装 .NET Framework 4.0
+下载地址：http://www.microsoft.com/net

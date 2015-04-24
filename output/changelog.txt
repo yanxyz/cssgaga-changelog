@@ -1,0 +1,1832 @@
+314
+
+1. 修复某些 FTP 虚拟磁盘无法同步的 bug
+2. 优化逻辑，文件处理之前先检查目标环境是否可用，以免徒劳一场
+
+
+
+313
+
+增加 SVN 更新 功能
+
+
+
+312
+
+修复 CSS 新文件名失效 bug（感谢 markqin 反馈）
+
+
+
+311
+
+修复 AutoRetina 对 gif 失效的 bug
+
+
+
+310
+
+新增关联 TortoiseSVN 功能（文件生成到目标路径后可自动更新 SVN 并弹出 SVN 提交窗口）
+
+*注：
+1. 请在更多选项中填写 TortoiseSVN 安装目录
+2. 对应关系中在勾选 关联 TortoiseSVN 选项
+
+
+
+309
+
+皮肤 1toN 速度优化
+
+
+
+308
+
+修复第一次运行时缺少 dll 的 bug
+
+
+
+307
+
+1. 修复空白帧动画写法（例如0%{}）所导致的压缩出错 bug 
+2. 修复文件打包时因文件重复不能打包的 bug
+
+
+
+306
+
+1. 界面输出处理时间
+2. 临时压缩包更改后缀，防止被其他进程占用
+
+
+
+305
+
+修复某些情况下文件同步到临时目录的 bug
+
+
+
+304
+
+1. 速度优化
+2. 去除 ini 功能
+
+
+
+303
+
+1. 调整 PNG32 转 PNG8(α) 后的文件名及位置（转换后的文件生成在当前目录下的 8a 目录中，且文件名与源文件名相同）
+2. 修复图片合成功能中宽高多 1px 的 bug
+
+
+
+302
+
+1. 调整 PNG32 转 PNG8(α) 后的文件名及位置（转换后的文件生成在当前目录下的 8a 目录中，且文件名与源文件名相同）
+2. 修复图片合成功能中宽高多 1px 的 bug
+
+
+
+301
+
+调整 AutoRetina 生成的 media query 格式，增加 min-resolution:1.25dppx (感谢 shenfeili 反馈)
+
+
+
+300
+
+增加 Icon 1 to N 功能
+
+
+
+299
+
+增加生成 iOS 及 Android 各种尺寸图片功能（内测，请联系 ytzong 开启）
+修复启动时异常退出的 bug（感谢 nengzongtan 反馈）
+
+
+
+298
+
+回滚 PNG 压缩算法（感谢 tqtan 反馈新算法的问题）
+
+
+
+297
+
+使用 VS2013 重新编译
+
+
+
+296
+
+1. PNG 压缩算法改进
+2. 修复 AutoSprite 中 .ie6.png 色块缺失 bug
+3. 修复服务器在某些情况下启动时报错的 bug
+
+
+
+295
+
+1. PNG 压缩算法改进
+2. 修复 AutoSprite 中 .ie6.png 色块缺失 bug
+3. 修复服务器在某些情况下启动时报错的 bug
+
+
+
+294
+
+增加图片合成器
+
+
+
+293
+
+1. 增加 PSD TO PNG 功能
+2. 提高皮肤 1toN 中的 AutoSrite 生成速度
+
+
+
+292
+
+1. 增加 PSD TO PNG 功能
+2. 提高皮肤 1toN 中的 AutoSrite 生成速度
+
+
+
+290
+
+自动更新服务器迁移至 github
+
+
+
+289
+
+默认启动本地服务器，去除选项
+
+
+
+288
+
+增加时间戳格式设置
+
+
+
+287
+
+AutoRetina 格式改为
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi)
+
+
+
+286
+
+1. 更改新文件名规则，由每次自动命名改为手动刷新命名
+2. 支持 css 新文件名，ini 格式调整
+3. 增加文件类型设置，可自由配置需要同步的文件类型
+
+
+
+285
+
+base64 增加去除大小限制选项
+
+
+
+284
+
+修复当 css 多个选择器调用同一个 absolute 文件夹的图片时生成的 IE6 图片透明滤镜重复的 bug（感谢 yu xu 反馈）
+
+
+
+283
+
+修复注释没有正确关闭造成 CssGaga 死循环的 bug（感谢 webbwang 反馈）
+
+
+
+282
+
+渐变代码生成器支持 rgba
+
+
+
+281
+
+精简 RGBAtoFilter 的写法
+
+
+
+280
+
+修复配置文件写失败的 bug （其表现是某些功能虽然勾选了但不起作用）
+
+
+
+279
+
+修复 base64 bug
+
+
+
+278
+
+AutoRetina 功能支持 base64，规则是：
+若本地有同名的 @2x 文件，则使用 @2x 的图片转码，并生成 background-size
+也就是说不管屏幕是不是 retina，都调用 @2x 的 base64 图片
+
+
+
+277
+
+增加保存文件列表功能（更多选项中勾选保存文件列表开启）：
+1. 源文件列表保存到 桌面\CssGaga\source-list-xxx.log
+2. 提单文件列表保存到 桌面\CssGaga\report-list-n-xxx.log
+注：其中 n 为目标路径序号，xxx 为日期
+源文件列表拖到 CssGaga 中可以直接运行
+
+
+
+276
+
+增加代码生成器
+
+
+
+275
+
+界面调整
+
+
+
+273
+
+AutoRetina 格式调整（感谢 cheunglong 反馈）为
+@media only screen and (-webkit-min-device-pixel-ratio:1.3),(min-resolution:96dpi) { ... }
+
+
+
+272
+
+AutoRetina 格式调整（感谢 cheunglong 反馈）为
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),(min-resolution:96dpi) { ... }
+
+
+
+271
+
+修复一些与算法无关的小 bug
+
+
+
+270
+
+支持 php 文件同步
+
+
+
+269
+
+界面调整
+监听文件格式改为 css/htm/html/aspx
+
+
+
+268
+
+界面调整
+监听文件格式改为 css/htm/html/aspx
+
+
+
+267
+
+界面调整
+去除监听文件格式限制
+
+
+
+266
+
+去除 png32 有损压缩
+
+
+
+265
+
+调整 RGBAtoFilter 格式，感谢任平生的部分建议
+
+
+源文件：.classname{ background-color:rgba(0,0,0,.5); }
+
+Gaga 会添加一段兼容各个 IE 浏览器的代码：
+
+.classname{background-color:transparent\0;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);#zoom:1}
+@media screen and (min-width:0\0){.classname{background-color:rgba(0,0,0,.5);-ms-filter:'none'}}
+
+
+
+264
+
+调整 RGBAtoFilter 格式，感谢任平生的建议
+
+
+源文件：.classname{background-color:rgba(0,0,0,.5);}
+
+Gaga 生成后会添加一段：
+
+.classname {
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+	#zoom:1;
+}
+:root .classname{
+	-ms-filter: 'none';
+}
+
+
+
+263
+
+调整 RGBAtoFilter 格式，感谢任平生及galendong的建议
+
+
+源文件：.classname{background-color:rgba(0,0,0,.5);}
+
+Gaga 生成后会添加一段：
+
+.classname {
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+	#zoom:1;
+	#background-image:url(about:blank)
+}
+:root .classname{
+	-ms-filter: 'none';
+}
+
+
+
+262
+
+增加 RGBAtoFilter 功能（勾选开启）
+
+
+
+261
+
+增加 RGBAtoFilter 功能（勾选开启）
+
+源文件：.classname{background-color:rgba(0,0,0,.5);}
+
+Gaga生成后：
+
+.classname{background-color:transparent\0;-ms-filter:'progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)';#filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);#zoom:1}
+@media screen and (min-width:0\0){.classname{background-color:rgba(0,0,0,.5);-ms-filter:'none';filter:none}}
+
+
+
+260
+
+增加 RGBAtoFilter 功能（勾选开启）
+
+源文件：.classname{background-color:rgba(0,0,0,.5);}
+
+Gaga生成后：
+
+.classname{background-color:transparent\0;-ms-filter:'progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)';#filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);#zoom:1}
+@media screen and (min-width:0\0){.classname{background-color:rgba(0,0,0,.5);-ms-filter:none;filter:none}}
+
+
+
+259
+
+增加 RGBAtoFilter 功能（勾选开启）
+
+源文件：.classname{background-color:rgba(0,0,0,.5);}
+
+Gaga生成后：
+.classname{background-color:transparent\0;-ms-filter:'progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)';#filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);#zoom:1}
+@media screen and (min-width:0\0){.classname{background-color:rgba(0,0,0,.5);-ms-filter:none;filter:none}}
+
+
+
+258
+
+增加皮肤1to2功能，供调试时使用，皮肤1toN时同时勾选ASPX下面的调试即可
+
+
+
+257
+
+增加皮肤1to2功能，供调试时使用，皮肤1toN时同时勾选ASPX下面的调试即可
+
+
+
+256
+
+增加 PNG32 有损压缩功能，面积 <10000 或颜色数 <5000 的 PNG32 将会转换为 PNG8(α)
+注：absolute 目录（自动生成 IE6 滤镜）的 PNG32 会跳过此功能
+
+
+
+255
+
+修复更新程序 bug
+
+
+
+254
+
+PNG 压缩参数调整
+
+
+
+253
+
+AutoSprite 新文件名规则调整为：
+css名-当前时间小时数-每小时操作css的次数-当前机器用户名
+例如 style.css，若选用新文件名（点更多在 beta 功能组中开启）
+则生成的图片名为 style-16-0-ytzong.png
+
+
+
+252
+
+AutoSprite for retina 算法微调
+
+
+
+251
+
+1. 修复 bug：base64 空格 bug；import 格式 bug（感谢任平生反馈）
+2. ini 格式调整（仅 Qzone 使用）
+3. 屏蔽当路径含有 % 时文件不存在的警告（皮肤 1toN 时可以用 % 作为模板变量）
+4. 更友好的配置提示（不需手动更改 <configuration> 节点，按提示重启程序即可；XP 用户未安装 .NET Framework 3.5 时自动打开下载链接；屏蔽配置正确者的配置提示）
+5. 支持 svg 转 base64
+
+
+
+250
+
+1. 修复 bug：base64 空格 bug；import 格式 bug（感谢任平生反馈）
+2. ini 格式调整（仅 Qzone 使用）
+3. 屏蔽当路径含有 % 时文件不存在的警告（皮肤 1toN 时可以用 % 作为模板变量）
+4. 更友好的配置提示（不需手动更改 <configuration> 节点，按提示重启程序即可；XP 用户未安装 .NET Framework 3.5 时自动打开下载链接；屏蔽配置正确者的配置提示）
+5. 支持 svg 转 base64
+
+
+
+249
+
+全局 jpg 压缩算法调整
+
+
+
+248
+
+修复启动 bug，XP 用户需安装 .NET Framework 3.5
+
+
+
+247
+
+修复启动 bug，XP 用户需安装 .NET Framework 3.5
+
+
+
+246
+
+1. 改进 2x -> 1x 算法（感谢 meterscao 反馈问题）
+2. 更新 png/jpg 压缩核心 jpegtran/PngOptimizerCL
+
+
+
+245
+
+1. 改进 2x -> 1x 算法（感谢 meterscao 反馈问题）
+2. 更新 png/jpg 压缩核心 jpegtran/PngOptimizerCL
+
+
+
+244
+
+hack retina webkit background-size bug
+详情请访问 http://www.99css.com
+
+
+
+243
+
+1. 恢复检查关联性选项
+2. 修复压缩import url时的bug
+
+
+
+242
+
+去除LESS相关功能
+
+
+
+241
+
+去除LESS相关功能
+
+
+
+240
+
+修复未合并的import多个分号的bug
+压缩后的URL去除http:及https:
+
+
+
+239
+
+因干扰优先级，去除合并选择器功能
+
+
+
+238
+
+LESS功能调整：
+1. 拖LESS后不需再拖生成的CSS文件，两步合一
+2. 增加清理LESS生成的所有CSS功能
+3. 监听功能调整，仅支持调试模式监听
+4. 更新LESS核心（node.exe及less.js）
+
+
+
+237
+
+暂时去除监听功能
+
+
+
+236
+
+修复合并选择器bug（感谢colorcai反馈）
+
+
+
+235
+
+默认开启检查关联性功能，去除界面选项
+
+
+
+234
+
+增加批量改名功能
+
+
+
+233
+
+修复 retina bug
+
+
+
+232
+
+增加JSON文件的同步功能
+
+
+
+231
+
+修复合并选择器IE6 BUG
+
+
+
+230
+
+增加AutoSprite合并选择器功能
+
+
+
+229
+
+1. 增加AutoSprite合并选择器功能，点更多进入开启
+   此功能为测试功能，欢迎反馈BUG
+2. 设置界面调整
+
+
+
+227
+
+1. 增加AutoSprite合并选择器功能，点更多进入开启
+   此功能为测试功能，欢迎反馈BUG
+2. 设置界面调整
+
+
+
+226
+
+增加自定义列表功能
+可在输出文件列表的时候输出一个自定义字符开头的文件列表
+在设置界面中设置
+
+
+
+225
+
+增加自定义列表功能
+可在输出文件列表的时候输出一个自定义字符开头的文件列表
+在设置界面中设置
+
+
+
+224
+
+修复retina bug
+
+
+
+223
+
+1. 增加更新提醒
+2. 修复retina bug
+
+
+
+222
+
+1. 增加aspx to htm功能（拖进aspx文件即可在当前目录生成静态页面，并支持同步功能）
+2. 调整皮肤1toN的逻辑，自动生成的皮肤文件只有勾选临时目录时才会存在于皮肤目录
+
+
+
+221
+
+增加查找功能，请点击右下角更多查看
+拖进css或图片，查找可能调用该文件的css/less/htm/html/aspx文件
+
+
+
+220
+
+增加设置界面，从此不需要手动更改配置文件
+
+
+
+219
+
+增加设置界面，从此不需要手动更改配置文件
+
+
+
+218
+
+合并CSS时支持 @import 'reset.css'; @import "reset.css"; 语法
+注：之前只支持这些语法 @import url(reset.css); import url('reset.css'); import url("reset.css");
+
+
+
+217
+
+1. 监听由只监听上一次的文件改为监听整个源文件目录（地址栏所示）的文件
+2. 修复AutoSprite时的retina bug
+
+
+
+216
+
+1. 监听由只监听上一次的文件改为监听整个源文件目录（地址栏所示）的文件
+2. 修复AutoSprite时的retina bug
+
+
+
+215
+
+Image to codešýÂË@2xÍźĆŹ
+
+
+
+214
+
+修复监听时程序无响应的BUG
+
+
+
+213
+
+修复部分情况下查找retina图片失效的bug
+Image to code过滤@2x图片（即拖进整个目录的图片时，生成代码时过滤@2x图片的代码）
+
+
+
+212
+
+修复部分情况下查找retina图片失效的bug
+Image to code过滤@2x图片（即拖进整个目录的图片时，生成代码时过滤@2x图片的代码）
+
+
+
+211
+
+增加LESS Debug功能
+
+详情请访问 http://www.99css.com
+
+
+
+210
+
+修复loading图标不显示的bug
+界面调整
+
+
+
+209
+
+增加转换编码为UTF8+BOM功能
+
+注：通过同步出去的HTML和CSS为UTF8无BOM
+
+
+
+208
+
+增加HTML/CSS/LESS转换编码为UTF8+BOM功能
+
+注：通过同步出去的HTML和CSS为UTF8无BOM
+
+
+
+207
+
+png-32转png-8α后自动压缩
+
+
+
+206
+
+增加图片 2x - > 1x 功能
+
+将文件名为 @2x 结尾的 png、jpg 拖进来，可在当前目录中生成 1/2 宽高的同名图片（注：生成的 png 格式为 png-32）
+比如 icon@2x.png 拖进来会在当前目录生成 icon.png（注：若 icon.png存在，会覆盖之）
+
+
+
+205
+
+增加本地服务器功能
+
+
+
+204
+
+修复监听死循环bug
+
+202 增加监听功能
+
+若最近一次处理的文件列表中的文件有变动
+则可自动再次处理此文件列表
+相当于自动按F5
+
+
+
+203
+
+修复监听死循环bug
+
+202 增加监听功能
+
+若最近一次处理的文件列表中的文件有变动
+则可自动再次处理此文件列表
+相当于自动按F5
+
+
+
+202
+
+增加监听功能
+
+若最近一次处理的文件列表中的文件有变动
+则可自动再次处理此文件列表
+相当于自动按F5
+
+
+
+201
+
+1. 修复LESS文件bug
+2. 拖进来HTML文件过滤less.js，并转换link标签的less为css
+
+
+
+200
+
+1. 修复LESS文件bug
+2. 拖进来HTML文件过滤less.js，并转换link标签的less为css
+
+
+
+199
+
+1. 修复retina不支持png32 sprite的bug
+2. 去除优图
+
+
+
+198
+
+支持 retina，详见 http://www.99css.com
+更新 png 压缩工具
+
+
+
+197
+
+支持 retina，详见 http://www.99css.com
+更新 png 压缩工具
+
+
+
+196
+
+支持 retina，详见 http://www.99css.com
+更新 PngOptimizerCL.exe
+
+
+
+195
+
+集成LESS，目前仅支持 *.less -> *.css
+更多功能，敬请期待~
+
+注：同名css会被覆盖，请谨慎操作
+
+
+
+194
+
+png32转png8(α)后的文件名改为 *.8a.png
+拖slice/目录的文件不会同步到目标环境
+
+
+
+193
+
+Slice to code 调整为 Image to code
+img目录拖进来的图片都能自动生成如下形式的代码
+.icon{width:16px;height:16px;background-image:url(img/icon.png);}
+
+
+
+192
+
+暂时去除 Image to code，下个版本恢复
+
+
+
+191
+
+Slice to code 调整为 Image to code
+img目录拖进来的图片都能自动生成如下形式的代码
+.icon{width:16px;height:16px;background-image:url(img/icon.png);}
+
+
+
+190
+
+目录规则调整（重要！）
+
+调整之后，slice base64 absolute 目录可放置在 img 目录中
+比如 css/img/blog/slice/ 可以被 AutoSprite
+同时兼容之前的写法 css/slice/
+
+注：
+slice/ 目录中的图片可被 AutoSprite
+base64/ 目录中的图片可被编码为 base64 并合并到 css 中
+absolute/ 目录中的 png 图片可自动为 IE6 添加 png 透明滤镜，cur 文件自动转为绝对地址
+详细请到 http://www.99css.com 查看相关文档
+
+
+
+189
+
+集成优图压缩beta，欢迎反馈压缩效果
+
+186 界面调整，去除 AutoSprite 和 DataURI 选项，默认开启
+
+
+
+188
+
+集成优图压缩(β)，欢迎反馈压缩效果
+
+186 界面调整，去除 AutoSprite 和 DataURI 选项，默认开启
+
+
+
+187
+
+集成优图压缩(β)，欢迎反馈压缩效果
+
+186 界面调整，去除 AutoSprite 和 DataURI 选项，默认开启
+
+
+
+186
+
+界面调整，去除 AutoSprite 和 DataURI 选项，默认开启
+
+
+
+185
+
+1. 增加png32转png8(α)功能，点击CssGaga界面右下角的更多进入
+2. 去除BOM
+
+
+
+184
+
+Prefix 和 Suffix 支持时间变量 %datetime%，例如
+<add key="cssSuffix" value="#cssgaga-%filename%-end{z-index:%datetime%}" />
+
+此例的应用场景：开发科通过获取此处的 z-index 值来做 css 文件的版本对比
+
+
+
+183
+
+Slice to Code 优化
+
+Before:
+.xxx-32{width:16px;height:16px;background-image:url(slice/xxx.32.png);}
+
+After:
+.xxx{width:16px;height:16px;background-image:url(slice/xxx.32.png);_background-image:url(slice/xxx.ie6.png);}
+
+
+
+182
+
+Slice to Code 优化
+
+Before:
+.xxx-32{width:16px;height:16px;background-image:url(slice/xxx.32.png);}
+
+After:
+.xxx{width:16px;height:16px;background-image:url(slice/xxx.32.png);_background-image:url(slice/xxx.ie6.png);}
+
+
+
+181
+
+IE滤镜压缩算法调整
+
+
+
+180
+
+兼容IE的Matrix滤镜，感谢sutama反馈
+
+IE Matrix滤镜一般用来做旋转，不过CSS经过压缩后，IE6/7中此滤镜后的代码会无法正常解析，CssGaga更新至此版本后，将会彻底避免这种问题
+
+
+
+179
+
+Win7 状态栏进度条优化
+
+
+
+178
+
+增加 eot/svg/ttf/woff 格式的拖拽支持
+
+
+
+177
+
+AutoSprite 支持生成 png32
+
+命名以 ".32.png" 结尾的 slice 们将拼为一张 png32 的 sprite，例如
+
+.icon1{width:16px;height:16px;background-image:url(slice/icon1.32.png)}
+.icon2{width:16px;height:16px;background-image:url(slice/icon2.32.png)}
+
+
+
+176
+
+AutoSprite 支持生成 png32
+
+命名以 ".32.png" 结尾的 slice 们将拼为一张 png32 的 sprite，例如
+
+.icon1{width:16px;height:16px;background-image:url(slice/icon1.32.png)}
+.icon2{width:16px;height:16px;background-image:url(slice/icon2.32.png)}
+
+
+
+175
+
+AutoSprite 支持生成 png32
+
+命名以 "-32.png" 结尾的 slice 们将拼为一张 png32 的 sprite，例如如下写法
+
+.icon1{width:16px;height:16px;background-image:url(slice/icon1-32.png)}
+.icon2{width:16px;height:16px;background-image:url(slice/icon2-32.png)}
+
+
+
+173
+
+拖进html文件同步时，先过滤css文件名中的.source
+
+
+
+172
+
+调整时间戳格式
+
+
+
+171
+
+修复前置字符串位于@import之前的bug(感谢wenjuli反馈)
+
+
+
+170
+
+拖入 *.htm 及 *.html 拷贝至目标环境，不再生成为 *.email.htm 或 *.email.html
+
+
+
+169
+
+更新PngOptimizerCL.exe（感谢淘米网的反馈）
+
+
+
+168
+
+增加 iPhone 选项：
+
+1. *@2x.png -> *.png
+2. 512*512 -> iPhone各尺寸的icon
+
+具体使用方法请留意 99css.com 后续的文章
+
+
+
+167
+
+增加自动生成 iPhone 各尺寸 icon 功能
+
+
+
+166
+
+CSS可附加自定义代码，%filename%为当前CSS的文件名（不含后缀）
+
+<add key="cssPrefix" value="#cssgaga-%filename%-start{display:none}" />
+<add key="cssSuffix" value="#cssgaga-%filename%-end{display:none}" />
+
+
+
+165
+
+修复小于1KB的png压缩bug，感谢meterscao反馈
+
+
+
+164
+
+去除gif压缩（因其在IE6/7/8中有显示问题），感谢galendong反馈
+
+
+
+163
+
+赶快试试更紧的 AutoSprite 吧
+
+需 .NET Framework 4.0 
+下载地址：http://www.microsoft.com/net
+
+
+
+162
+
+正式发布！赶快试试最难的 AutoSprite 吧
+
+需安装 .NET Framework 4.0
+下载地址：http://www.microsoft.com/net
+
+
+
+161
+
+性能优化
+
+
+
+160
+
+增加检查关联性功能（有界面选项）：
+
+比如拖进reset.css，则所有import url(reset.css)的css都会被处理
+
+注：该功能山寨小李刀刀(ofcss.com)的CssToolkit
+
+
+
+159
+
+增加@import智能分析功能：
+
+比如拖进reset.css，则所有import url(reset.css)的css都会被处理
+
+注：该功能山寨小李刀刀(ofcss.com)的CssToolkit
+
+
+
+158
+
+增加保存状态功能：
+
+1. 批量处理完文件后，右下角出现“保存状态”链接，点击即可保存此次处理的文件列表至桌面 GagaSession.log
+
+2. 拖 GagaSession.log 进 CssGaga 即可处理此文件列表中的文件
+
+
+
+157
+
+Slice to Code支持自定义格式，详情请打开CssGaga后按F1看帮助
+
+
+
+156
+
+修复AutoSprite中IE6独用的slice也会合并到css命名的sprite中的bug
+
+
+
+155
+
+1. 集成小李刀刀（ofcss.com）的CssToolkit.exe，用于分析css文件的import关系
+
+2. 调整AutoSprite算法
+
+之前：支持*、#、_三种hack
+现在：只支持_，并且只支持gif和png格式，单独合并为一张名为*-ie6.png的sprite
+
+例如：
+①.class{background-image:url(slice/a.png);_background-image:url(slice/b.gif);}
+能正确处理为
+.class{background-image:url(sprite/css.png);background-position:0 0;_background-image:url(slice/css-ie6.png);_background-position:0 0;}
+②.class{background-image:url(slice/a.jpg);_background-image:url(slice/b.jpg);}
+会出错，处理后为
+.class{background-image:url(sprite/css.jpg);background-position:0 0;_background-image:url(slice/b.jpg);}
+③实在有②这种需求可以这么写
+.class{background-image:url(slice/a.jpg);_background-image:url(img/b.jpg);_background-position:0 0;}
+处理后为
+.class{background-image:url(sprite/css.jpg);background-position:0 0;_background-image:url(img/b.jpg);_background-position:0 0;}
+这时同步资源也能把b.jpg带出去
+
+
+
+154
+
+调整png32转png8算法
+
+
+
+153
+
+1. 修复 import 缓存 bug
+2. 更改时间戳格式，精确到秒
+
+
+
+152
+
+1. 修复 import 缓存 bug
+2. 更改时间戳格式，精确到秒
+
+
+
+151
+
+增加功能：AutoSprite生成的图片可按时间命名，例如：
+
+默认生成 sprite/event.png，经过如下配置后
+<add key="chkSpriteUnique" value="1" />
+为：sprite/event-08031453.png
+08031453与时间戳格式相同
+
+
+
+150
+
+增加slice to code功能，详情请按F1看99css.com的介绍
+
+
+
+149
+
+增加slice to code功能，详情请按F1看99css.com的介绍
+
+
+
+148
+
+调整jpg压缩算法
+
+
+
+147
+
+1. 根据 RFC 规范，将 max-age 的值调整为一年（感谢damao提醒）
+2. 修复去色后图片不能删除的bug（感谢meterscao反馈）
+
+
+
+146
+
+修复AutoSprite时转绝对路径有时不生效的bug
+
+
+
+144
+
+去色支持AutoSprite
+
+
+
+142
+
+去除临时目录选项
+
+
+
+141
+
+转为绝对路径增加对同步资源目录的支持
+
+
+
+140
+
+AutoSprite调整：
+间距由0改为1px，更兼容iPad
+
+
+
+137
+
+路径中包含空格则跳过处理
+
+
+
+136
+
+ÐÞ¸´dataURI bug
+
+
+
+135
+
+1. 更改png压缩算法
+2. 更改jpg压缩算法，最大压缩质量为70（若勾选jpg HD则为80）
+
+
+
+134
+
+更改png压缩内核
+
+
+
+130
+
+修复import文件被缓存的bug
+
+
+
+129
+
+每个目标环境对应一个提单路径，请在配置中添加
+如<add key="pathReport1" value="/usr/local/imgcache/htdocs/py-test/source" />
+若未填，则以pathReport替代
+
+
+
+128
+
+每个目标环境对应一个提单路径，请在配置中添加
+如<add key="pathReport1" value="/usr/local/imgcache/htdocs/py-test/source" />
+若未填，则以pathReport替代
+
+
+
+127
+
+修复几个小bug
+
+
+
+126
+
+jpg压缩质量默认从60调为70，并增加jpg HD选项（相当于80）
+注：所有经过CssGaga的jpg都按此参数处理
+
+
+
+125
+
+AutoSprite支持独立sprite（在需要独立sprite的css中添加#CssGaga{background-image:none}）
+
+例如index.css和list.css都import了header.css
+在header.css中添加#CssGaga{background-image:none}
+经过AutoSprite处理后，header.css生成一个header.png
+而index.png和list.png将不包含header的部分
+
+
+
+124
+
+AutoSprite支持独立sprite（在需要独立sprite的css中添加#CssGaga{background-image:none}）
+
+例如index.css和list.css都import了header.css
+在header.css中添加#CssGaga{background-image:none}
+经过AutoSprite处理后，header.css生成一个header.png
+index.png和list.png将不包含header的部分
+
+
+
+123
+
+AutoSprite支持独立sprite（在需要独立sprite的css中添加#CssGaga{background-image:none}）
+
+例如index.css和list.css都import了header.css
+在header.css中添加#CssGaga{background-image:none}
+经过AutoSprite处理后，header.css生成一个header.png
+index.png和list.png将不包含header的部分
+
+
+
+122
+
+修复jpg压缩时图片被放大的bug(感谢s5s5反馈)
+
+
+
+121
+
+css优化，将url(#)替换为url(about:blank)，避免404
+时间戳bug修复，不再为DataURI添加时间戳
+
+119重大更新!
+
+一、架构调整：
+
+1. css文件名不必包含.source（例如原来只支持处理index.source.css，现在改为可处理index.css）。原先为*.source.css的生成后依然为*.css。请统一为一种格式，要么全为*.source.css，要么全为*.css（请勿让index.source.css和index.css同时出现在一个目录中）
+2. 压缩后的文件（包括css及图片）不再生成到当前目录，而是生成到临时目录（这意味着开发环境中的css及图片可都为源文件，比如jpg为100%质量，png可为fireworks分层文件）
+3. 合并css默认开启，无法关闭
+
+二、功能调整：
+
+1. 开启gif压缩功能
+2. 开启jpg有损压缩功能，质量相当于ps中的60
+3. 去除下载远程文件功能
+4. 格式转换功能调整，只保留图片转jpg功能
+5. 时间戳功能加至url()方式调用的所有文件
+6. AutoSprite生成的jpg图片背景改为白色
+
+
+
+120
+
+120修复附加时间戳时的小bug
+
+119重大更新!
+
+一、架构调整：
+
+1. css文件名不必包含.source（例如原来只支持处理index.source.css，现在改为可处理index.css）。原先为*.source.css的生成后依然为*.css。请统一为一种格式，要么全为*.source.css，要么全为*.css（请勿让index.source.css和index.css同时出现在一个目录中）
+2. 压缩后的文件（包括css及图片）不再生成到当前目录，而是生成到临时目录（这意味着开发环境中的css及图片可都为源文件，比如jpg为100%质量，png可为fireworks分层文件）
+3. 合并css默认开启，无法关闭
+
+二、功能调整：
+
+1. 开启gif压缩功能
+2. 开启jpg有损压缩功能，质量相当于ps中的60
+3. 去除下载远程文件功能
+4. 格式转换功能调整，只保留图片转jpg功能
+5. 时间戳功能加至url()方式调用的所有文件
+6. AutoSprite生成的jpg图片背景改为白色
+
+
+
+119
+
+一、架构调整：
+
+1. css文件名不必包含.source（例如原来只支持处理index.source.css，现在改为可处理index.css）。原先为*.source.css的生成后依然为*.css。请统一为一种格式，要么全为*.source.css，要么全为*.css（请勿让index.source.css和index.css同时出现在一个目录中）
+2. 压缩后的文件（包括css及图片）不再生成到当前目录，而是生成到临时目录（这意味着开发环境中的css及图片可都为源文件，比如jpg为100%质量，png可为fireworks分层文件）
+3. 合并css默认开启，无法关闭
+
+二、功能调整：
+
+1. 开启gif压缩功能
+2. 开启jpg有损压缩功能，质量相当于ps中的60
+3. 去除下载远程文件功能
+4. 格式转换功能调整，只保留图片转jpg功能
+5. 时间戳功能加至url()方式调用的所有文件
+6. AutoSprite生成的jpg图片背景改为白色
+
+
+
+118
+
+重要更新！
+
+一、架构调整：
+
+1. css文件名不必包含.source（例如原来只支持处理index.source.css，现在改为可处理index.css）。原先为*.source.css的生成后依然为*.css。请统一为一种格式，要么全为*.source.css，要么全为*.css（请勿让index.source.css和index.css同时出现在一个目录中）
+2. 压缩后的文件（包括css及图片）不再生成到当前目录，而是生成到临时目录（这意味着开发环境中的css及图片可都为源文件，比如jpg为100%质量，png可为fireworks分层文件）
+3. 合并css默认开启，无法关闭
+
+二、功能调整：
+
+1. 开启gif压缩功能
+2. 开启jpg有损压缩功能，质量相当于ps中的60
+3. 去除下载远程文件功能
+4. 格式转换功能调整，只保留图片转jpg功能
+5. 时间戳功能加至url()方式调用的所有文件
+6. AutoSprite生成的jpg图片背景改为白色
+
+
+
+117
+
+重要更新！
+
+一、架构调整：
+
+1. css文件名不必包含.source（例如原来只支持处理index.source.css，现在改为可处理index.css）。原先为*.source.css的生成后依然为*.css。请统一为一种格式，要么全为*.source.css，要么全为*.css（请勿让index.source.css和index.css同时出现在一个目录中）
+2. 压缩后的文件（包括css及图片）不再生成到当前目录，而是生成到临时目录（这意味着开发环境中的css及图片可都为源文件，比如jpg为100%质量，png可为fireworks分层文件）
+3. 合并css默认开启，无法关闭
+
+二、功能调整：
+
+1. 开启gif压缩功能
+2. 开启jpg有损压缩功能，质量相当于ps中的60
+3. 去除下载远程文件功能
+4. 格式转换功能调整，只保留图片转jpg功能
+5. 时间戳功能加至url()方式调用的所有文件
+6. AutoSprite生成的jpg图片背景改为白色
+
+
+
+116
+
+修复皮肤1toN时不能自动创建本地目录的bug（感谢meterscao反馈）
+
+
+
+115
+
+1. 时间戳后后加max_age参数（感谢大猫建议）
+注：需运维支持
+
+2. 转换为绝对路径选项显性化
+
+
+
+114
+
+1. 去除border压缩（感谢kaiye反馈）
+
+2. 去除界面上的置顶选项，如有需要可改配置（1为置顶）
+<add key="chkTopMost" value="1" />
+
+2. 可配置生成文件为UTF8去BOM（1为无BOM）
+<add key="chkNoBom" value="1" />
+
+3. 可配置Sprite转换绝对地址（1为转换sprite为绝对地址）
+<add key="chkAbsolutePath" value="1" />
+
+
+
+113
+
+修复界面拖拽时的一个小BUG
+
+
+
+112
+
+增加是否置顶选项
+
+
+
+111
+
+错误提示拆分
+
+
+
+110
+
+时间戳格式调整为月日小时分钟（例如：05171420）
+
+
+
+109
+
+增强同步资源及时间戳功能
+
+同步资源：
+支持img、absolute、base64（未勾选DataURI时有效）目录及子目录
+
+时间戳：
+支持AutoSprite
+支持同步资源所涉及的文件
+格式调整为月日小时（例如：051313）
+
+
+
+108
+
+107增加同步资源功能：
+
+将CSS中调用的图片，cur等自动同步到勾选的目标环境中，可通过CssGaga输出的错误信息来判断是否有404的文件
+支持皮肤1toN
+
+注：
+只支持当前目录下的img及absolute目录
+
+108功能调整：同步资源前先压缩
+
+
+
+107
+
+增加同步资源功能：
+将CSS中调用的图片，cur等自动同步到勾选的目标环境中，可通过CssGaga输出的错误信息来判断是否有404的文件
+支持皮肤1toN
+
+注：
+只支持当前目录下的img及absolute目录
+
+
+
+106
+
+修复slice的子目录名含+时引发的bug
+
+
+
+105
+
+修复slice的子目录名含+时引发的bug
+
+
+
+104
+
+增加时间戳功能（暂只支持AutoSprite生成后的图片）
+格式为：background-image:url(sprite/xxx.png?d=20110504)
+
+
+
+103
+
+AutoSprite调整：slice支持子目录
+
+
+
+102
+
+CSS压缩算法调整：
+
+1. 压缩 rgba 中的不透明度
+   rgba(0,0,0,0.5) -> rgba(0,0,0,.5)
+   
+2. 压缩 border 
+   border:0 none -> border:0
+   border:none -> border:0
+
+注：若皮肤1toN配置文件中有rgba请修改为压缩后的值
+
+
+
+101
+
+皮肤1toN支持rgba替换
+
+
+
+100
+
+AutoSprite支持jpg，用法将jpg放在slice中，css里background-image（不支持缩写）调用
+
+
+
+99
+
+build98重要更新，请仔细阅读：
+
+1. 去除MHTML功能（DataURI可继续使用，文件放置在base64文件夹即可）
+2. 更改cursor文件夹cur文件自动转绝对地址功能，请将此文件夹中的cur文件移至absolute文件夹
+3. 增加alpha透明png自动添加IE6滤镜功能，png文件需放置在absolute文件夹中，写法为 background-image:url(xxx.png)
+
+build99
+将scale改为crop（感谢damao提醒）
+
+
+
+98
+
+重要更新，请仔细阅读：
+
+1. 去除MHTML功能（DataURI可继续使用，文件放置在base64文件夹即可）
+2. 更改cursor文件夹cur文件自动转绝对地址功能，请将此文件夹中的cur文件移至absolute文件夹
+3. 增加alpha透明png自动添加IE6滤镜功能，png文件需放置在absolute文件夹中，写法为 background-image:url(xxx.png)
+
+
+
+97
+
+修复gif去色时为png32的bug
+
+
+
+96
+
+修复gif去色时的bug
+更改为去色时将gif转为png8
+
+
+
+95
+
+1. 目标环境增加至7个
+2. AutoSprite的slice支持gif
+
+
+
+94
+
+因存在反复压缩的问题，暂时去除gif压缩功能
+
+png32 -> png8(α)，gif -> png8 改为保留源文件，方便对比
+注：若有文件名与转换后文件同名会被覆盖
+
+
+
+93
+
+去除MozToCSS3功能
+
+
+
+92
+
+MozToCSS3将会在Firefox4发布后取消！！！
+
+build90：
+AutoSprite不再精简bg-position:0 0
+因有时通过切换class来换背景时需要覆盖坐标
+
+build91:
+地址栏增加智能提示功能
+
+
+
+91
+
+build90：
+AutoSprite不再精简bg-position:0 0
+因有时通过切换class来换背景时需要覆盖坐标
+
+build91:
+地址栏增加智能提示功能
+
+
+
+90
+
+AutoSprite不再精简bg-position:0 0
+因有时通过切换class来换背景时需要覆盖坐标
+
+
+
+89
+
+文件格式转换功能调整，支持以下3种格式转换：
+css -> source.css
+gif -> png8
+png32 -> png8(α)
+
+注：转换后会删除（或覆盖）源文件
+
+
+
+88
+
+同步文件类型增加htc格式
+
+
+
+87
+
+VS2010 SP1 重新编译
+
+
+
+86
+
+build85修复AutoSprite bug：bg-position:0 0时多出来一个分号
+
+build86增加重复上一次操作功能：
+
+1. 快捷键为F5，界面上暂无触发该功能的控件
+2. 按F5前可点击界面右侧选项重新配置
+
+
+
+85
+
+修复AutoSpritebug：
+bg-position:0 0时多出来一个分号
+
+
+
+84
+
+生成.email.htm时只处理head中的link
+
+
+
+83
+
+优化AutoSprite算法，生成的sprite图片面积及体积更小
+
+
+
+82
+
+1.增加loading图标
+2.优化.email.htm的处理方式
+
+
+
+81
+
+AutoSprite增加对IE hack的支持（*#_开头），例如以下格式：
+.avatar{background-image:url(slice/rabbit.alpha.png);*background-image:url(slice/rabbit.alpha.png);#background-image:url(slice/rabbit.alpha.png);_background-image:url(slice/rabbit.png)}
+合并后为
+.avatar{background-image:url(sprite/autosprite.png);background-position:-46px 0;*background-image:url(sprite/autosprite.png);*background-position:-46px 0;#background-image:url(sprite/autosprite.png);#background-position:-46px 0;_background-image:url(sprite/autosprite.png)}
+
+
+
+80
+
+修复CSS变灰时部分类型颜色未变灰的BUG
+
+
+
+79
+
+修复bug：
+import的css中又import其他文件时文件名未去除.source
+
+
+
+78
+
+修复自动更新失效的BUG
+
+
+
+77
+
+加入gif动画压缩功能
+
+
+
+76
+
+更新自动更新组件
+
+
+
+75
+
+情人节快乐！
+
+
+
+13
+
+更新内容：
+1. Win7任务栏显示进度

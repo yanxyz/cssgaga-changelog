@@ -1,0 +1,4 @@
+95
+
+1. 目标环境增加至7个
+2. AutoSprite的slice支持gif

@@ -1,0 +1,6 @@
+301
+
+调整 AutoRetina 生成的 media query 格式，增加 min-resolution:1.25dppx (感谢 shenfeili 反馈)
+
+300
+增加 Icon 1 to N 功能

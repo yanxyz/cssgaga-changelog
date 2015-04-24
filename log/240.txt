@@ -1,0 +1,24 @@
+263
+
+调整 RGBAtoFilter 格式，感谢任平生及galendong的建议
+
+
+源文件：.classname{background-color:rgba(0,0,0,.5);}
+
+Gaga 生成后会添加一段：
+
+.classname {
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+	#zoom:1;
+	#background-image:url(about:blank)
+}
+:root .classname{
+	-ms-filter: 'none';
+}
+
+
+262
+增加 RGBAtoFilter 功能（勾选开启）
+
+258
+增加皮肤1to2功能，供调试时使用，皮肤1toN时同时勾选ASPX下面的调试即可

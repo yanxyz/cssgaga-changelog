@@ -1,0 +1,19 @@
+253
+
+AutoSprite 新文件名规则调整为：
+css名-当前时间小时数-每小时操作css的次数-当前机器用户名
+例如 style.css，若选用新文件名（点更多在 beta 功能组中开启）
+则生成的图片名为 style-16-0-ytzong.png
+
+252
+AutoSprite for retina 算法微调
+
+251
+1. 修复 bug：base64 空格 bug；import 格式 bug（感谢任平生反馈）
+2. ini 格式调整（仅 Qzone 使用）
+3. 屏蔽当路径含有 % 时文件不存在的警告（皮肤 1toN 时可以用 % 作为模板变量）
+4. 更友好的配置提示（不需手动更改 <configuration> 节点，按提示重启程序即可；XP 用户未安装 .NET Framework 3.5 时自动打开下载链接；屏蔽配置正确者的配置提示）
+5. 支持 svg 转 base64
+
+249
+全局 jpg 压缩算法调整

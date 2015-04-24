@@ -1,0 +1,17 @@
+260
+
+增加 RGBAtoFilter 功能（勾选开启）
+
+源文件：.classname{background-color:rgba(0,0,0,.5);}
+
+Gaga生成后：
+
+.classname{background-color:transparent\0;-ms-filter:'progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)';#filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);#zoom:1}
+@media screen and (min-width:0\0){.classname{background-color:rgba(0,0,0,.5);-ms-filter:none;filter:none}}
+
+258
+增加皮肤1to2功能，供调试时使用，皮肤1toN时同时勾选ASPX下面的调试即可
+
+256
+增加 PNG32 有损压缩功能，面积 <10000 或颜色数 <5000 的 PNG32 将会转换为 PNG8(α)
+注：absolute 目录（自动生成 IE6 滤镜）的 PNG32 会跳过此功能

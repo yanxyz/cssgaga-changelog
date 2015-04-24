@@ -1,0 +1,8 @@
+151
+
+增加功能：AutoSprite生成的图片可按时间命名，例如：
+
+默认生成 sprite/event.png，经过如下配置后
+<add key="chkSpriteUnique" value="1" />
+为：sprite/event-08031453.png
+08031453与时间戳格式相同

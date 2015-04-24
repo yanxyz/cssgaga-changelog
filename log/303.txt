@@ -1,0 +1,10 @@
+319
+
+皮肤 1toN 算法调整，支持 #CssGaga{background-image:none}
+注：若不勾选生成到临时目录，皮肤目录生成的 css 文件会在处理完后删除
+
+317
+AutoSprite 代码暂时去除 background-size
+
+316
+修复图片合成选项卡 bug（感谢 tqtan 反馈）

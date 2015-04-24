@@ -1,0 +1,4 @@
+85
+
+修复AutoSpritebug：
+bg-position:0 0时多出来一个分号

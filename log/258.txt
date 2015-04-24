@@ -1,0 +1,15 @@
+279
+
+修复 base64 bug
+
+278
+AutoRetina 功能支持 base64，规则是：
+若本地有同名的 @2x 文件，则使用 @2x 的图片转码，并生成 background-size
+也就是说不管屏幕是不是 retina，都调用 @2x 的 base64 图片
+
+277
+增加保存文件列表功能（更多选项中勾选保存文件列表开启）：
+1. 源文件列表保存到 桌面\CssGaga\source-list-xxx.log
+2. 提单文件列表保存到 桌面\CssGaga\report-list-n-xxx.log
+注：其中 n 为目标路径序号，xxx 为日期
+源文件列表拖到 CssGaga 中可以直接运行

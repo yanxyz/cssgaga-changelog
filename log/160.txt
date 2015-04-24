@@ -1,0 +1,18 @@
+194
+
+png32转png8(α)后的文件名改为 *.8a.png
+拖slice/目录的文件不会同步到目标环境
+
+190
+
+目录规则调整（重要！）
+
+调整之后，slice base64 absolute 目录可放置在 img 目录中
+比如 css/img/blog/slice/ 可以被 AutoSprite
+同时兼容之前的写法 css/slice/
+
+注：
+slice/ 目录中的图片可被 AutoSprite
+base64/ 目录中的图片可被编码为 base64 并合并到 css 中
+absolute/ 目录中的 png 图片可自动为 IE6 添加 png 透明滤镜，cur 文件自动转为绝对地址
+详细请到 http://www.99css.com 查看相关文档

@@ -1,0 +1,8 @@
+300
+
+增加 Icon 1toN 功能，详情请关注 www.99css.com 后续的说明
+
+299
+
+增加生成 iOS 及 Android 各种尺寸图片功能（内测，请联系 ytzong 开启）
+修复启动时异常退出的 bug（感谢 nengzongtan 反馈）

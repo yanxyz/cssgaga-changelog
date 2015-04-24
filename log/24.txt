@@ -1,0 +1,3 @@
+83
+
+优化AutoSprite算法，生成的sprite图片面积及体积更小

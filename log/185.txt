@@ -1,0 +1,13 @@
+219
+
+增加设置界面，从此不需要手动更改配置文件
+
+218
+
+合并CSS时支持 @import 'reset.css'; @import "reset.css"; 语法
+注：之前只支持这些语法 @import url(reset.css); import url('reset.css'); import url("reset.css");
+
+217
+
+1. 监听由只监听上一次的文件改为监听整个源文件目录（地址栏所示）的文件
+2. 修复AutoSprite时的retina bug

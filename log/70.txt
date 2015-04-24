@@ -1,0 +1,8 @@
+124
+
+AutoSprite支持独立sprite（在需要独立sprite的css中添加#CssGaga{background-image:none}）
+
+例如index.css和list.css都import了header.css
+在header.css中添加#CssGaga{background-image:none}
+经过AutoSprite处理后，header.css生成一个header.png
+index.png和list.png将不包含header的部分

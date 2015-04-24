@@ -1,0 +1,4 @@
+104
+
+增加时间戳功能（暂只支持AutoSprite生成后的图片）
+格式为：background-image:url(sprite/xxx.png?d=20110504)

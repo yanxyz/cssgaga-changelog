@@ -1,0 +1,9 @@
+317
+
+AutoSprite 代码暂时去除 background-size
+
+316
+修复图片合成选项卡 bug（感谢 tqtan 反馈）
+
+315
+AutoSprite 代码增加 background-size

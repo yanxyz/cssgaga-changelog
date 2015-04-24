@@ -1,0 +1,3 @@
+186
+
+界面调整，去除 AutoSprite 和 DataURI 选项，默认开启

@@ -1,0 +1,13 @@
+311
+
+修复 AutoRetina 对 gif 失效的 bug
+
+310
+新增关联 TortoiseSVN 功能（文件生成到目标路径后可自动更新 SVN 并弹出 SVN 提交窗口）
+
+*注：
+1. 请在更多选项中填写 TortoiseSVN 安装目录
+2. 对应关系中在勾选 关联 TortoiseSVN 选项
+
+309
+皮肤 1toN 速度优化

@@ -1,0 +1,18 @@
+224
+
+修复retina bug
+
+222
+1. 增加aspx to htm功能（拖进aspx文件即可在当前目录生成静态页面，并支持同步功能）
+2. 调整皮肤1toN的逻辑，自动生成的皮肤文件只有勾选临时目录时才会存在于皮肤目录
+
+221
+增加查找功能，请点击右下角更多查看
+拖进css或图片，查找可能调用该文件的css/less/htm/html/aspx文件
+
+220
+增加设置界面，从此不需要手动更改配置文件
+
+218
+合并CSS时支持 @import 'reset.css'; @import "reset.css"; 语法
+注：之前只支持这些语法 @import url(reset.css); import url('reset.css'); import url("reset.css");

@@ -1,0 +1,14 @@
+249
+
+全局 jpg 压缩算法调整
+
+248
+修复启动 bug，XP 用户需安装 .NET Framework 3.5
+
+246
+1. 改进 2x -> 1x 算法（感谢 meterscao 反馈问题）
+2. 更新 png/jpg 压缩核心 jpegtran/PngOptimizerCL
+
+244
+hack retina webkit background-size bug
+详情请访问 http://www.99css.com

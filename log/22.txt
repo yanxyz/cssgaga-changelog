@@ -1,0 +1,6 @@
+81
+
+AutoSprite增加对IE hack的支持（*#_开头），例如以下格式：
+.avatar{background-image:url(slice/rabbit.alpha.png);*background-image:url(slice/rabbit.alpha.png);#background-image:url(slice/rabbit.alpha.png);_background-image:url(slice/rabbit.png)}
+合并后为
+.avatar{background-image:url(sprite/autosprite.png);background-position:-46px 0;*background-image:url(sprite/autosprite.png);*background-position:-46px 0;#background-image:url(sprite/autosprite.png);#background-position:-46px 0;_background-image:url(sprite/autosprite.png)}

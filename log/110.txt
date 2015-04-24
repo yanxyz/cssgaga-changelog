@@ -1,0 +1,21 @@
+155
+
+1. 集成小李刀刀（ofcss.com）的CssToolkit.exe，用于分析css文件的import关系
+
+2. 调整AutoSprite算法
+
+之前：支持*、#、_三种hack
+现在：只支持_，并且只支持gif和png格式，单独合并为一张名为*-ie6.png的sprite
+
+例如：
+①.class{background-image:url(slice/a.png);_background-image:url(slice/b.gif);}
+能正确处理为
+.class{background-image:url(sprite/css.png);background-position:0 0;_background-image:url(slice/css-ie6.png);_background-position:0 0;}
+②.class{background-image:url(slice/a.jpg);_background-image:url(slice/b.jpg);}
+会出错，处理后为
+.class{background-image:url(sprite/css.jpg);background-position:0 0;_background-image:url(slice/b.jpg);}
+③实在有②这种需求可以这么写
+.class{background-image:url(slice/a.jpg);_background-image:url(img/b.jpg);_background-position:0 0;}
+处理后为
+.class{background-image:url(sprite/css.jpg);background-position:0 0;_background-image:url(img/b.jpg);_background-position:0 0;}
+这时同步资源也能把b.jpg带出去

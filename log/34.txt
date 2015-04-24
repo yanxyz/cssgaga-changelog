@@ -1,0 +1,10 @@
+92
+
+MozToCSS3将会在Firefox4发布后取消！！！
+
+build90：
+AutoSprite不再精简bg-position:0 0
+因有时通过切换class来换背景时需要覆盖坐标
+
+build91:
+地址栏增加智能提示功能

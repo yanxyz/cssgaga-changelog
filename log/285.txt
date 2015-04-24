@@ -1,0 +1,7 @@
+303
+
+1. 调整 PNG32 转 PNG8(α) 后的文件名及位置（转换后的文件生成在当前目录下的 8a 目录中，且文件名与源文件名相同）
+2. 修复图片合成功能中宽高多 1px 的 bug
+
+301
+调整 AutoRetina 生成的 media query 格式，增加 min-resolution:1.25dppx (感谢 shenfeili 反馈)

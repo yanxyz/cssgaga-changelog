@@ -1,0 +1,13 @@
+287
+
+AutoRetina 格式改为
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi)
+
+286
+1. 更改新文件名规则，由每次自动命名改为手动刷新命名
+2. 支持 css 新文件名，ini 格式调整
+3. 增加文件类型设置，可自由配置需要同步的文件类型
+
+285
+base64 增加去除大小限制选项

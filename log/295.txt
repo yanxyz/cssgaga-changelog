@@ -1,0 +1,9 @@
+313
+
+增加 SVN 更新 功能
+
+312
+修复 CSS 新文件名失效 bug（感谢 markqin 反馈）
+
+311
+修复 AutoRetina 对 gif 失效的 bug

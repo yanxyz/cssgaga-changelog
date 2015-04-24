@@ -1,0 +1,9 @@
+130
+
+修复import文件被缓存的bug
+
+128
+
+每个目标环境对应一个提单路径，请在配置中添加
+如<add key="pathReport1" value="/usr/local/imgcache/htdocs/py-test/source" />
+若未填，则以pathReport替代

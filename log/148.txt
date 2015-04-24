@@ -1,0 +1,9 @@
+183
+
+Slice to Code 优化
+
+Before:
+.xxx-32{width:16px;height:16px;background-image:url(slice/xxx.32.png);}
+
+After:
+.xxx{width:16px;height:16px;background-image:url(slice/xxx.32.png);_background-image:url(slice/xxx.ie6.png);}

@@ -1,0 +1,30 @@
+{
+  "name": "cssgaga-changelog",
+  "version": "1.0.0",
+  "description": "get cssgaga changelog from google code",
+  "private": true,
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanxyz/cssgaga-changelog.git"
+  },
+  "author": "Ivan Yan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yanxyz/cssgaga-changelog/issues"
+  },
+  "homepage": "https://github.com/yanxyz/cssgaga-changelog",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^2.9.24",
+    "iconv-lite": "^0.4.8",
+    "jschardet": "^1.1.1",
+    "object-assign": "^2.0.0",
+    "yargs": "^3.7.2"
+  },
+  "devDependencies": {
+    "should": "^6.0.1"
+  }
+}

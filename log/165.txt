@@ -1,0 +1,4 @@
+199
+
+1. 修复retina不支持png32 sprite的bug
+2. 去除优图

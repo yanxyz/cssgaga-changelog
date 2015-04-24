@@ -1,0 +1,10 @@
+212
+
+修复部分情况下查找retina图片失效的bug
+Image to code过滤@2x图片（即拖进整个目录的图片时，生成代码时过滤@2x图片的代码）
+
+211
+
+增加LESS Debug功能
+
+详情请访问 http://www.99css.com

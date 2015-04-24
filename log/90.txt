@@ -1,0 +1,4 @@
+140
+
+AutoSprite调整：
+间距由0改为1px，更兼容iPad

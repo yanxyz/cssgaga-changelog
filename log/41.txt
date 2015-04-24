@@ -1,0 +1,10 @@
+99
+
+build98重要更新，请仔细阅读：
+
+1. 去除MHTML功能（DataURI可继续使用，文件放置在base64文件夹即可）
+2. 更改cursor文件夹cur文件自动转绝对地址功能，请将此文件夹中的cur文件移至absolute文件夹
+3. 增加alpha透明png自动添加IE6滤镜功能，png文件需放置在absolute文件夹中，写法为 background-image:url(xxx.png)
+
+build99
+将scale改为crop（感谢damao提醒）

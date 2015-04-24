@@ -1,0 +1,11 @@
+272
+
+AutoRetina 格式调整（感谢 cheunglong 反馈）为
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),(min-resolution:96dpi) { ... }
+
+271
+修复一些与算法无关的小 bug
+
+270
+支持 php 文件同步

@@ -1,0 +1,11 @@
+265
+
+调整 RGBAtoFilter 格式，感谢任平生的部分建议
+
+
+源文件：.classname{ background-color:rgba(0,0,0,.5); }
+
+Gaga 会添加一段兼容各个 IE 浏览器的代码：
+
+.classname{background-color:transparent\0;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);#zoom:1}
+@media screen and (min-width:0\0){.classname{background-color:rgba(0,0,0,.5);-ms-filter:'none'}}

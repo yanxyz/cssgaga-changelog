@@ -1,0 +1,12 @@
+102
+
+CSS压缩算法调整：
+
+1. 压缩 rgba 中的不透明度
+   rgba(0,0,0,0.5) -> rgba(0,0,0,.5)
+   
+2. 压缩 border 
+   border:0 none -> border:0
+   border:none -> border:0
+
+注：若皮肤1toN配置文件中有rgba请修改为压缩后的值
